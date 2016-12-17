@@ -4,6 +4,7 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS,'gameDiv');
 var platforms;
 var player;
 var hearts;
+var gems;
 var lives;
 var livesTxt;
 
