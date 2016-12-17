@@ -58,16 +58,14 @@ function fireGun(){
         var bullet = bullets.getFirstExists(false);
     }
 
-    if(bullet)
-    {
-        bullet.reset(player.x, player.y);
-        bullet.body.velocity.x = 350;
-        bulletTime = game.time.now + 80;
-    }
+    if(!bullet) return;
+
+    bullet.reset(player.x, player.y);
+    bullet.body.velocity.x = 350;
+    bulletTime = game.time.now + 80;
 
     if (cursors.left.isDown) {
         bullet.body.velocity.x = -350;
-
     }
     if(cursors.up.isDown){
         bullet.body.velocity.y = -350;
