@@ -106,19 +106,19 @@ function bulletCollision(bullet, alien){
 }
 
 //Enemy and player collision.
-function enemyCollision(player, bullet){
+function enemyCollision(_player, _bullet){
     //Gets the first heart in the group.
     var live = lives.getFirstAlive();
     score -= 500;
 
     if(live){
         live.kill();
-        player.reset(32, game.world.height -175);
+        _player.reset(32, game.world.height -175);
     }
 
     //If lives are gone, kill player and display text!
     if(lives.countLiving() === 0){
-        player.kill();
+        _player.kill();
         console.log('dead');
         deadTxt.visible = true;
 
