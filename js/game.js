@@ -137,6 +137,7 @@ function restart(){
     score = 0;
     winTxt.visible = false;
 
+    startTimer();
 }
 
 var gameState = {
