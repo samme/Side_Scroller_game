@@ -188,7 +188,7 @@ var gameState = {
         player.body.collideWorldBounds = true;
 
         // Adds hearts into a group.
-        var gems = game.add.group();
+        gems = game.add.group();
         gems.enableBody = true;
 
         //Adds a group of lives to the screen.
